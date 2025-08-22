@@ -5,9 +5,9 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { toast } from "sonner";
 
+import { getMarkSVG,RafifMark } from "@/components/rafif-mark";
 import { copyText } from "@/utils/copy";
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark";
 import { getWordmarkSVG } from "./chanhdai-wordmark";
 import {
   ContextMenu,
@@ -31,7 +31,7 @@ export function BrandContextMenu({ children }: { children: React.ReactNode }) {
             toast.success("Copied Mark as SVG");
           }}
         >
-          <ChanhDaiMark />
+          <RafifMark />
           Copy Mark as SVG
         </ContextMenuItem>
 

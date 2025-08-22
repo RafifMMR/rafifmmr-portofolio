@@ -20,17 +20,14 @@ export function ProfileHeader() {
           />
         </div>
 
-        {/* Flag of Viet Nam */}
+        {/* Flag of Indonesia */}
         <svg
-          className="absolute top-0 -left-px h-8 sm:h-9"
+          className="absolute top-0 -left-px h-8 rounded sm:h-9"
           viewBox="0 0 30 20"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="30" height="20" fill="#F00" />
-          <polygon
-            points="15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85"
-            fill="#FFEB00"
-          />
+          <rect width="30" height="20" fill="#FFF" />
+          <rect width="30" height="10" fill="#E31D1A" />
         </svg>
       </div>
 
@@ -41,11 +38,11 @@ export function ProfileHeader() {
             "bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] [--pattern-foreground:var(--color-edge)]/56"
           )}
         >
-          <div className="line-clamp-1 font-mono text-xs text-zinc-300 select-none max-sm:hidden dark:text-zinc-800">
-            {"text-3xl "}
-            <span className="inline dark:hidden">text-zinc-950</span>
-            <span className="hidden dark:inline">text-zinc-50</span>
-            {" font-medium"}
+          <div className="font-mono text-xs text-wrap break-words whitespace-normal text-zinc-300 select-none dark:text-zinc-700">
+            {"Coding like poetry "}
+            <span className="inline dark:hidden">should be short</span>
+            <span className="hidden dark:inline">should be short</span>
+            {" and concise."}
           </div>
         </div>
 
@@ -56,15 +53,6 @@ export function ProfileHeader() {
             <SimpleTooltip content="Verified">
               <VerifiedIcon className="size-[0.6em] translate-y-px text-info select-none" />
             </SimpleTooltip>
-            {USER.namePronunciationUrl && (
-              <>
-                &nbsp;
-                <PronounceMyName
-                  className="translate-y-px"
-                  namePronunciationUrl={USER.namePronunciationUrl}
-                />
-              </>
-            )}
           </h1>
 
           <div className="h-12 border-t border-edge py-1 pl-4 sm:h-auto">

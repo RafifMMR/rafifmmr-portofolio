@@ -1,62 +1,42 @@
 export const USER = {
-  firstName: "Chánh Đại",
-  lastName: "Nguyễn",
-  displayName: "Chánh Đại",
-  username: "ncdai",
+  firstName: "Rafif",
+  lastName: "Muhammad Muflihur Rodwa",
+  displayName: "Rafif M.M.R",
+  username: "rafifmmr",
   gender: "male",
   pronouns: "he/him",
-  bio: "Creating with code. Small details matter.",
-  flipSentences: [
-    "Creating with code. Small details matter.",
-    "Design Engineer",
-    "Open Source Contributor",
-  ],
-  address: "Thanh My Tay Ward, Ho Chi Minh City, Viet Nam",
-  phoneNumber: "Kzg0Nzc3ODg4MTQ4", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
-  email: "ZGFpQGNoYW5oZGFpLmNvbQ==", // base64 encoded
-  website: "https://chanhdai.com",
-  otherWebsites: [
-    "https://dai.ng",
-    "https://dai.so",
-    "https://d.io.vn",
-    "https://d.id.vn",
-    "https://dai.io.vn",
-    "https://dai.id.vn",
-    "https://chanhdai.io.vn",
-    "https://chanhdai.id.vn",
-    "https://ncdai.vn",
-    "https://ncdai.net",
-    "https://dai.is-a.dev",
-  ],
-  jobTitle: "Design Engineer",
+  bio: "Creating with code, driven by passion.",
+  flipSentences: ["Frontend Developer", "UI/UX Designer", "Web3 Developer"],
+  address: "Banyuwangi, Jawa Timur",
+  phoneNumber: "KzYyIDgxMyAzNzgxIDcyNDU=", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
+  email: "cmFmaWZtdWhhbW1hZDIwMDNAZ21haWwuY29t", // base64 encoded
+  website: "https://rafifmmr.my.id",
+  otherWebsites: ["https://dai.ng"],
+  dateOfBirth: "2003-06-23", // YYYY-MM-DD
+  jobTitle: "Software Developer & UI/UX Designer",
+
   jobs: [
     {
-      title: "Senior Frontend Developer & UI Design Lead",
-      company: "Simplamo",
-      website: "https://simplamo.com?ref=IN-926722",
+      title: "Co-Founder COO & (Chief Operating Officer) ",
+      company: "Mudapedia Digital Indonesia",
+      website: "https://mudapediadigitalindonesia.com",
     },
     {
-      title: "Founder",
-      company: "Quaric",
-      website: "https://quaric.com",
+      title: " Frontend Developer",
+      company: "Mudapedia Digital Indonesia",
+      website: "https://mudapediadigitalindonesia.com",
     },
   ],
   about: `
-Hello, World! I am Chánh Đại — a Design Engineer passionate about creating high-performance, user-centric software solutions with intuitive and engaging designs.
+Hello, World! I’m Rafif M.M.R — a hybrid Frontend Developer & UI/UX Designer passionate about building intuitive, fast, and modern digital experiences.
 
-With 5+ years of experience, I specialize in building high-quality web and mobile applications using Next.js, React, TypeScript, and modern front-end technologies. Beyond work, I love exploring new technologies and turning ideas into reality through personal projects.
+Since 2022, I’ve been crafting web interfaces using React, Next.js, and Tailwind CSS, while also designing seamless user journeys with Figma. I recently started exploring Rust and enjoy combining code with design in meaningful ways.
 
-One of my key projects, [ZaDark](https://zadark.com), enhances the Zalo experience on PC and Web, surpassing 80,000 downloads on [SourceForge](https://sourceforge.net/projects/zadark) and 15,000 active users on the [Chrome Web Store](https://chromewebstore.google.com/detail/llfhpkkeljlgnjgkholeppfnepmjppob) since 2022.
-
-I'm also the creator of [React Wheel Picker](https://react-wheel-picker.chanhdai.com) — iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support. It has earned 221 stars on [GitHub](https://github.com/ncdai/react-wheel-picker) and was selected for **Vercel Open Source Program** summer 2025 cohort, receiving $3,600 in Vercel platform credits, an OSS Starter Pack, and priority community support to fuel its ongoing development.
-
-Let's connect and collaborate!
+Beyond work, I love diving into new technologies, writing blogs, experimenting with ideas (stay tuned for my upcoming AI Chat Code project 👀), and even spending time in the field literally, as I enjoy trading and farming too.
   `,
-  avatar: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.webp",
-  ogImage:
-    "https://assets.chanhdai.com/images/screenshot-og-image-light.png?t=1755355653",
-  namePronunciationUrl: "https://assets.chanhdai.com/audio/chanhdai.mp3",
-  keywords:
-    "ncdai, nguyenchanhdai, nguyen chanh dai, chanhdai, chanh dai, iamncdai, quaric, zadark, nguyễn chánh đại, chánh đại",
-  dateCreated: "2023-10-20", // YYYY-MM-DD
+  avatar:
+    "https://res.cloudinary.com/dnuusu1kb/image/upload/v1750139537/rafifmmr-pp.jpg",
+  ogImage: "https://assets.chanhdai.com/images/screenshot-og-image-dark.png",
+  keywords: "rafif, rafifmmr, iamrafifmmr",
+  dateCreated: "2025-06-23", // YYYY-MM-DD
 };

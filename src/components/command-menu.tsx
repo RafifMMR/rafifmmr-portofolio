@@ -35,11 +35,10 @@ import { cn } from "@/lib/utils";
 import type { Post } from "@/types/blog";
 import { copyText } from "@/utils/copy";
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark";
 import { getWordmarkSVG } from "./chanhdai-wordmark";
 import { Icons } from "./icons";
+import { getMarkSVG, RafifMark } from "./rafif-mark";
 import { Button } from "./ui/button";
-import { Separator } from "./ui/separator";
 
 type CommandLinkItem = {
   title: string;
@@ -53,9 +52,9 @@ type CommandLinkItem = {
 
 const MENU_LINKS: CommandLinkItem[] = [
   {
-    title: "Daifolio",
+    title: "Home",
     href: "/",
-    icon: ChanhDaiMark,
+    icon: RafifMark,
   },
   {
     title: "Blog",
@@ -191,10 +190,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
     <>
       <Button
         variant="secondary"
-        className={cn(
-          "h-8 gap-1.5 rounded-full bg-zinc-50 px-2.5 text-muted-foreground select-none hover:bg-zinc-50 dark:bg-zinc-900 dark:hover:bg-zinc-900",
-          "not-dark:border dark:inset-shadow-[1px_1px_1px,0px_0px_2px] dark:inset-shadow-white/15"
-        )}
+        className="h-8 w-24 gap-1.5 rounded-full border bg-zinc-50 px-2.5 text-muted-foreground select-none hover:bg-zinc-50 lg:w-36 dark:border-zinc-700/80 dark:bg-zinc-900 dark:hover:bg-zinc-900"
         onClick={() => setOpen(true)}
       >
         <svg
@@ -211,16 +207,21 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
           />
         </svg>
 
-        <span className="font-sans text-sm/4 font-medium sm:hidden">
+        {/* <span className="font-sans text-sm/4 font-medium sm:hidden">
           Search
-        </span>
+        </span> */}
 
-        <CommandMenuKbd className="hidden tracking-wider sm:in-[.os-macos_&]:flex">
-          ⌘K
-        </CommandMenuKbd>
-        <CommandMenuKbd className="hidden sm:not-[.os-macos_&]:flex">
-          Ctrl K
-        </CommandMenuKbd>
+        <span className="font-sans text-sm/4 font-medium">Search</span>
+
+        <span className="max-sm:hidden">
+          <kbd className="hidden h-4 items-center rounded-sm bg-black/5 px-1 font-sans text-[13px]/4 font-normal tracking-wider in-[.os-macos]:flex dark:bg-white/10">
+            ⌘K
+          </kbd>
+
+          <kbd className="hidden h-4 items-center rounded-sm bg-black/5 px-1 font-sans text-[13px]/4 not-[.os-macos_&]:flex dark:bg-white/10">
+            Ctrl K
+          </kbd>
+        </span>
       </Button>
 
       <CommandDialog open={open} onOpenChange={setOpen}>
@@ -280,7 +281,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
                 );
               }}
             >
-              <ChanhDaiMark />
+              <RafifMark />
               Copy Mark as SVG
             </CommandItem>
 
@@ -441,19 +442,13 @@ function CommandMenuFooter() {
       <div className="flex h-10" />
 
       <div className="absolute inset-x-0 bottom-0 flex h-10 items-center justify-between gap-2 border-t bg-zinc-100/30 px-4 text-xs font-medium dark:bg-zinc-800/30">
-        <ChanhDaiMark className="size-6 text-muted-foreground" aria-hidden />
+        <RafifMark className="size-6 text-muted-foreground" />
 
         <div className="flex shrink-0 items-center gap-2">
-          <span>{ENTER_ACTION_LABELS[selectedCommandKind]}</span>
+          {ENTER_ACTION_LABELS[selectedCommandKind]}
           <CommandMenuKbd>
             <CornerDownLeftIcon />
           </CommandMenuKbd>
-          <Separator
-            orientation="vertical"
-            className="data-[orientation=vertical]:h-4"
-          />
-          <span className="text-muted-foreground">Exit</span>
-          <CommandMenuKbd>Esc</CommandMenuKbd>
         </div>
       </div>
     </>
@@ -464,7 +459,7 @@ function CommandMenuKbd({ className, ...props }: React.ComponentProps<"kbd">) {
   return (
     <kbd
       className={cn(
-        "pointer-events-none flex h-5 min-w-6 items-center justify-center gap-1 rounded-sm bg-black/5 px-1 font-sans text-[13px] font-normal text-muted-foreground shadow-[inset_0_-1px_2px] shadow-black/10 select-none dark:bg-white/10 dark:shadow-white/10 dark:text-shadow-xs [&_svg:not([class*='size-'])]:size-3",
+        "pointer-events-none flex h-5 min-w-5 items-center justify-center gap-1 rounded-sm bg-black/5 px-1 font-sans text-[0.75rem] font-medium text-muted-foreground select-none dark:bg-white/10 [&_svg:not([class*='size-'])]:size-3",
         className
       )}
       {...props}
@@ -477,7 +472,7 @@ function postToCommandLinkItem(post: Post): CommandLinkItem {
 
   return {
     title: post.metadata.title,
-    href: isComponent ? `/components/${post.slug}` : `/blog/${post.slug}`,
+    href: `/blog/${post.slug}${isComponent ? "?cat=components" : ""}`,
     keywords: isComponent ? ["component"] : undefined,
   };
 }

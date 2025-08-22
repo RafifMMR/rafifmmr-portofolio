@@ -12,9 +12,9 @@ export function Experiences() {
       </PanelHeader>
 
       <div className="pr-2 pl-4">
-        {EXPERIENCES.map((experience) => (
-          <ExperienceItem key={experience.id} experience={experience} />
-        ))}
+        {EXPERIENCES.map((experience, index) => {
+          return <ExperienceItem key={index} experience={experience} />;
+        })}
       </div>
     </Panel>
   );

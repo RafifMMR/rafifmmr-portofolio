@@ -77,11 +77,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "https://assets.chanhdai.com/images/favicon.ico",
+        url: "https://res.cloudinary.com/dnuusu1kb/image/upload/v1755836086/rafif-logo-ico.ico ",
         sizes: "any",
       },
       {
-        url: "https://assets.chanhdai.com/images/favicon.svg",
+        url: "https://res.cloudinary.com/dnuusu1kb/image/upload/v1755835868/rafif-logo.svg",
         type: "image/svg+xml",
       },
     ],

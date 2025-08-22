@@ -21,52 +21,49 @@ export function TeckStack() {
           "bg-zinc-950/0.75 dark:bg-white/0.75"
         )}
       >
-        <ul className="flex flex-wrap gap-4 select-none">
-          {TECH_STACK.map((tech) => {
+        <div className="flex flex-wrap gap-4 select-none">
+          {TECH_STACK.map((item) => {
             return (
-              <li key={tech.key} className="flex">
-                <SimpleTooltip content={tech.title}>
-                  <a
-                    href={tech.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={tech.title}
-                  >
-                    {tech.theme ? (
-                      <>
-                        <Image
-                          src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-light.svg`}
-                          alt={`${tech.title} light icon`}
-                          width={32}
-                          height={32}
-                          className="hidden [html.light_&]:block"
-                          unoptimized
-                        />
-                        <Image
-                          src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-dark.svg`}
-                          alt={`${tech.title} dark icon`}
-                          width={32}
-                          height={32}
-                          className="hidden [html.dark_&]:block"
-                          unoptimized
-                        />
-                      </>
-                    ) : (
+              <SimpleTooltip key={item.key} content={item.title}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.title}
+                >
+                  {item.theme && item.darkImage ? (
+                    <>
                       <Image
-                        src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}.svg`}
-                        alt={`${tech.title} icon`}
+                        src={item.image}
+                        alt={`${item.title} light icon`}
                         width={32}
                         height={32}
+                        className="block dark:hidden"
                         unoptimized
                       />
-                    )}
-                    <span className="sr-only">{tech.title}</span>
-                  </a>
-                </SimpleTooltip>
-              </li>
+                      <Image
+                        src={item.darkImage}
+                        alt={`${item.title} dark icon`}
+                        width={32}
+                        height={32}
+                        className="hidden dark:block"
+                        unoptimized
+                      />
+                    </>
+                  ) : (
+                    <Image
+                      src={item.image}
+                      alt={`${item.title} icon`}
+                      width={32}
+                      height={32}
+                      unoptimized
+                    />
+                  )}
+                </a>
+              </SimpleTooltip>
             );
           })}
-        </ul>
+        </div>
       </PanelContent>
     </Panel>
   );

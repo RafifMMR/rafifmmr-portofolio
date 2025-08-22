@@ -2,36 +2,37 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: "simplamo",
-    companyName: "Simplamo Enterprise JSC",
-    companyLogo: "https://assets.chanhdai.com/images/companies/simplamo.webp",
+    id: "mudapedia",
+    companyName: "Mudapedia Digital Indonesia",
+    companyLogo:
+      "https://res.cloudinary.com/dnuusu1kb/image/upload/v1752122646/mudapedia-logo.png",
     positions: [
       {
-        id: "20f8bfe5-b6a3-4b0d-ac2f-6fccd50d417e",
-        title: "Senior Frontend Developer",
-        employmentPeriod: {
-          start: "10.2022",
-        },
+        id: "48ee1387-b11e-4e4d-aaac-ab2c2d560cf9",
+        title: "Frontend Developer",
+        employmentPeriod: { start: "11.2023" },
         employmentType: "Full-time",
         icon: "code",
-        description: `- Develop [AI Chat](https://help.simplamo.com/features/simplamo-ai/ai-chat/guide_simplamo_ai_chat?ref=IN-926722) and [AI Assistant](https://help.simplamo.com/features/simplamo-ai/ai-expert/aiexpert-rockdiscribe?ref=IN-926722) features.
-- Develop [Whiteboards](https://help.simplamo.com/features/whiteboard/overview?ref=IN-926722) with real-time collaboration.
-- Build and maintain the [Zalo Mini App](https://zalo.me/s/1736112917405511258/) for Simplamo with seamless integration.
-- Develop interactive chart and analytics widgets for the [Dashboard](https://help.simplamo.com/features/dashboard/overview) to enhance data visualization.
-- Develop and maintain core features to enhance functionality and user experience.
-- Ensure UI/UX consistency and adherence to standards.
-- Implement robust frontend solutions for web and mobile platforms.
-- Analyze technical capabilities and provide optimal solutions.`,
+        description: `
+- Built a clean and responsive [Article Landing Page](https://article-landing-page.vercel.app/).
+- Developed a visually bold [Fashion Landing Page](https://article-landing-page.vercel.app/).
+- Created [Shayna UI Kit](https://shayna-kit.vercel.app/).
+- Built the [Maile E-commerce Landing Page](https://maile-ecommerce-landing-page.vercel.app/).
+- Delivered a [Finance Company Profile](https://maile-ecommerce-landing-page.vercel.app/).
+- Developed the company website for [Mudapedia Digital Indonesia](https://www.mudapediadigitalindonesia.com/).
+- Build and refine core features that make the product more powerful and intuitive for users.
+- Keep the UI/UX experience consistent, clean, and aligned with the latest design standards.
+- Deliver solid frontend solutions across web and mobile fast, responsive, and scalable.
+- Break down complex problems, explore the best tech stack, and ship smart, practical solutions.`,
         skills: [
+          "HTML",
+          "CSS",
+          "JavaScript",
           "TypeScript",
           "Next.js",
           "React Native",
-          "MobX",
-          "MobX-State-Tree",
           "Tailwind CSS",
-          "Dify",
-          "Zalo Mini App",
-          "Agile",
+          "Shadcn UI",
           "Teamwork",
           "Research",
           "Problem-solving",
@@ -39,74 +40,53 @@ export const EXPERIENCES: Experience[] = [
         isExpanded: true,
       },
       {
-        id: "cedd7adb-4118-4085-9983-ae00530b49e2",
-        title: "UI Design Lead",
-        employmentPeriod: {
-          start: "10.2022",
-        },
-        employmentType: "Full-time",
-        icon: "design",
-        description: `- Ensure UI/UX consistency and high-quality standards.
-- Design intuitive, user-focused interfaces aligned with business goals.
-- Define and establish a cohesive UI style for Simplamo.`,
-        skills: ["Creativity", "UI/UX Design", "Figma"],
-      },
-    ],
-    isCurrentEmployer: true,
-  },
-  {
-    id: "quaric",
-    companyName: "Quaric Co., Ltd.",
-    companyLogo: "https://assets.chanhdai.com/images/companies/quaric.svg",
-    positions: [
-      {
-        id: "30d3a9fb-021d-452a-9d27-83655369b4b9",
-        title: "Design Engineer",
-        employmentPeriod: {
-          start: "03.2024",
-        },
+        id: "b5a9f7d6-a368-4cde-91a1-7a2a03640976",
+        title: "WordPress Developer",
+        employmentPeriod: { start: "07.2024" },
         employmentType: "Part-time",
-        icon: "code",
-        description: `- Created Quaric Brand Identity.
-- Created the Quaric Design System to standardize design practices and accelerate development.
-
-In-house Project: [Quaric Website](https://quaric.com)
-- Designed the UI/UX for Quaric Website, delivering a seamless experience.
-- Developed online ordering to streamline purchases.
-- Integrated VNPAY-QR for secure transactions.
-- Registered the e-commerce site with [online.gov.vn](http://online.gov.vn/website/chi-tiet-115855) for compliance.
-
-In-house Project: [ZaDark](https://zadark.com)
-- Build and maintain ZaDark.com with Docusaurus, integrating AdSense.
-- Develop and maintain the ZaDark extension for Zalo Web on Chrome, Safari, Edge, and Firefox — with 15,000+ active users via Chrome Web Store.`,
+        icon: "wordpress",
+        description: `
+- Developed the official website for [Pavo Coin](https://pavocoin.xyz/).
+- Built [Keris Emas](https://kerisemas.com/).
+- Created a modern tech company profile for [Gasvin Artha Suar](https://gasvin.com/).
+- Built [Mudapedia Market](https://market.mudapedia.my.id/).
+- Built and maintained [Gasvin Market](https://market.gasvin.com/).
+- Delivered [Digital Blockchain ID](https://digitalblockchain.id/).
+- Developed [USDD Website](https://usdd.my.id/).
+- Designed and implemented the official landing page for [Nagapara Coin](https://nagaparacoin.com/).`,
         skills: [
-          "Next.js",
-          "Strapi",
-          "Auth0",
-          "VNPAY-QR",
-          "Docker",
-          "NGINX",
-          "Google Cloud",
-          "Docusaurus",
-          "Extension",
-          "UI/UX Design",
-          "UX Writing",
-          "Design System",
-          "Brand Design",
-          "Figma",
-          "Research",
+          "WordPress",
+          "Elementor",
+          "Custom CSS & JS",
+          "WPForms",
+          "Cloudflare",
+          "cPanel Hosting",
+          "Responsive Layouting",
+          "Basic Animation",
         ],
-        isExpanded: true,
       },
       {
-        id: "991692c4-7d02-4666-8d31-933c4831768d",
-        title: "Founder & Director",
-        employmentPeriod: {
-          start: "03.2024",
-        },
+        id: "e4813607-2f33-47a3-8060-2734da46450a",
+        title: "Graphic Designer",
+        employmentPeriod: { start: "02.2025" },
+        employmentType: "Part-time",
+        icon: "design",
+        description: `
+- Design visually consistent and brand-aligned assets.
+- Create engaging social media content.
+- Develop e-book layouts, banners, and digital visuals.
+- Maintain visual identity across platforms.
+- Translate abstract concepts into bold designs.`,
+        skills: ["Figma", "Canva"],
+      },
+      {
+        id: "38edd073-6495-4eff-95b2-90f746676a67",
+        title: "Founder & COO",
+        employmentPeriod: { start: "01.2025" },
         employmentType: "Part-time",
         icon: "idea",
-        description: `- Lead and manage the company's strategy.
+        description: `
+- Lead and manage the company's strategy.
 - Oversee technical teams and product development.
 - Manage relationships with customers and partners.`,
         skills: ["Business Ownership", "Business Law", "Business Tax"],
@@ -115,212 +95,127 @@ In-house Project: [ZaDark](https://zadark.com)
     isCurrentEmployer: true,
   },
   {
-    id: "tungtung",
-    companyName: "Tung Tung JSC",
-    companyLogo: "https://assets.chanhdai.com/images/companies/tungtung.webp",
+    id: "officialpavo",
+    companyName: "Official Pavo",
+    companyLogo:
+      "https://res.cloudinary.com/dnuusu1kb/image/upload/v1752206003/officialpavo-logo.png",
     positions: [
       {
-        id: "3e831244-8d8c-41e2-b2ce-7f3946956afd",
-        title: "Web Developer",
-        employmentPeriod: {
-          start: "2020",
-          end: "2022",
-        },
-        employmentType: "Full-time",
-        description: `- Built a scalable design system for consistency and efficiency.
-- Built a complex rich-text editor based on ProseMirror and Slate for customizable content creation.
-- Integrated APIs with the Backend Team to enhance functionality.`,
-        icon: "code",
-        skills: [
-          "React",
-          "Redux",
-          "Storybook",
-          "Lerna",
-          "Agile",
-          "Teamwork",
-          "Research",
-        ],
-      },
-      {
-        id: "13bd34c3-db84-4fad-8132-a6c89a42957e",
-        title: "Mobile Developer",
-        employmentPeriod: {
-          start: "2019",
-          end: "2020",
-        },
-        employmentType: "Full-time",
-        description: `- Rebuilt the app with React Native for better UX and performance.
-- Integrated MoMo and in-app purchases for seamless payments.
-- Optimized deployment for staging and production.
-- Published on App Store and Google Play, ensuring compliance.`,
-        icon: "code",
-        skills: [
-          "React Native",
-          "Redux",
-          "MoMo Payment API",
-          "App Store",
-          "Google Play Store",
-          "App Center",
-          "Agile",
-          "Teamwork",
-          "Research",
-        ],
-      },
-      {
-        id: "73151add-7adf-4035-a237-b5803ceb5478",
-        title: "UI/UX Designer",
-        employmentPeriod: {
-          start: "2018",
-          end: "2019",
-        },
-        employmentType: "Full-time",
-        description: `- Designed a Landing Page for enterprise clients.
-- Redesigned the Online Quiz Platform for a modern look on web and mobile.
-- Redesigned the Pricing interface for individual customers.
-- Enhanced UX by improving usability, navigation, and user flow.`,
+        id: "9841ceb0-d42d-4d49-8eb5-75a16f607588",
+        title: "Graphic Designer",
+        employmentPeriod: { start: "07.2024" },
+        employmentType: "Part-time",
         icon: "design",
-        skills: ["UI/UX Design", "Sketch"],
+        description: `
+- Craft cohesive, brand-driven visuals that work seamlessly across all platforms.
+- Turn complex topics into clear, engaging social media stories that capture attention.
+- Design impactful e-books, banners, and digital layouts with a focus on clarity and visual flow.
+- Ensure a consistent visual voice across Instagram, X, Telegram, and presentation decks.
+- Transform abstract ideas into striking, thumb-stopping designs that stand out in any feed.`,
+        skills: ["Figma", "Canva"],
+        isExpanded: true,
+      },
+      {
+        id: "991692c4-7d02-4666-8d31-933c4831768d",
+        title: "Founder & CEO",
+        employmentPeriod: { start: "07.2024" },
+        employmentType: "Part-time",
+        icon: "idea",
+        description: `
+- Strategic business planning and execution to drive company growth.
+- Leadership in managing cross-functional and technical teams.
+- Product development oversight with focus on innovation and quality.
+- Business relationship management with clients, partners, and stakeholders.
+- Decision making grounded in market insights and data analysis.`,
+        skills: ["Business Ownership", "Business Law", "Business Tax"],
       },
     ],
-  },
-  {
-    id: "freelance",
-    companyName: "Freelance",
-    positions: [
-      {
-        id: "f0becfba-057d-40db-b252-739e1654faa1",
-        title: "Full-stack Developer",
-        employmentPeriod: {
-          start: "2018",
-          end: "2020",
-        },
-        employmentType: "Part-time",
-        description: `- Built an order management website with real-time delivery tracking.
-- Developed an e-commerce site for bird's nest products.
-- Created a map to display monitoring station data.
-- Designed a customizable WordPress landing page.`,
-        icon: "code",
-        skills: [
-          "Laravel",
-          "React",
-          "Express.js",
-          "Socket.IO",
-          "MongoDB",
-          "Firebase",
-          "WordPress",
-          "Docker",
-          "NGINX",
-        ],
-      },
-      {
-        id: "0eecdfcb-028d-41f4-93e9-1269ba7eff7e",
-        title: "Graphic & UI/UX Designer",
-        employmentPeriod: {
-          start: "2018",
-          end: "2019",
-        },
-        employmentType: "Part-time",
-        description: "Designed logos, posters, ads, and UI.",
-        icon: "design",
-        skills: [
-          "Creativity",
-          "UI/UX Design",
-          "Graphic Design",
-          "Sketch",
-          "Adobe Photoshop",
-          "Adobe Illustrator",
-        ],
-      },
-    ],
+    isCurrentEmployer: true,
   },
   {
     id: "education",
     companyName: "Education",
     positions: [
       {
-        id: "c47f5903-88ae-4512-8a50-0b91b0cf99b6",
-        title: "University of Science — VNUHCM",
-        employmentPeriod: {
-          start: "08.2018",
-          end: "2026",
-        },
+        id: "98c28fd3-2526-4564-a9f7-16a309356bc3",
+        title: "STIKOM PGRI Banyuwangi",
+        employmentPeriod: { start: "08.2021", end: "09.2025" },
         icon: "education",
-        description: `- Currently studying for a Bachelor's degree in Information Systems.
-- Language Proficiency: B1 English Level.
-- Achieved several awards, including:
-  - Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
-  - 2nd Prize — Business Startup Competition 2019`,
+        description: `
+- Bachelor's degree in Computer Science, Informatics Engineering.
+- Learned foundational programming with Python and algorithm design.
+- Developed UI/UX skills with Figma, advanced to front-end with HTML, CSS, SCSS, Bootstrap.
+- Enhanced creative capabilities through Adobe Premiere Pro, Photoshop, Illustrator.
+- Transitioned into modern web development with React, Tailwind CSS, Next.js, Radix UI.
+- Studied entrepreneurship, focusing on business strategy and startup development.
+- Delivered a guest lecture on Web3 and Blockchain at campus events.`,
         skills: [
-          "C++",
-          "Java",
           "Python",
-          "Data Structures",
           "Algorithms",
-          "Advanced Databases",
+          "Figma",
+          "HTML",
+          "CSS",
+          "SCSS",
+          "Bootstrap",
+          "Adobe Premiere Pro",
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "React",
+          "Tailwind CSS",
+          "Next.js",
+          "Radix UI",
+          "Entrepreneurship",
+          "Business Strategy",
+          "Startup Development",
           "Systems Design",
           "Distributed Systems",
           "Software Engineering",
           "Self-learning",
           "Teamwork",
           "Presentation",
+          "Public Speaking",
         ],
       },
       {
-        id: "70131ed8-36d9-4e54-8c78-eaed18240eca",
-        title: "Ly Tu Trong High School for the Gifted — Can Tho City",
-        employmentPeriod: {
-          start: "08.2015",
-          end: "06.2018",
-        },
+        id: "400a2ad2-ec62-4618-a56c-6121731a33b2",
+        title: "SMA Negeri 1 Rogojampi",
+        employmentPeriod: { start: "08.2015", end: "06.2018" },
         icon: "education",
-        description: `- Student of the Specialized Computer Science Program.
-- Granted direct admission to university due to achieving 3rd Prize at the national level.
-- [Achieved numerous awards](https://baocantho.com.vn/nguyen-chanh-dai-17-tuoi-va-19-giai-thuong-a97348.html) at city and national levels, including:
-  - [3rd Prize](https://muctim.tuoitre.vn/cong-cu-ho-tro-viec-day-va-hoc-55107.htm) — National Science and Engineering Fair 2018 (ViSEF)
-  - 1st Prize — Can Tho City Science and Engineering Fair 2018
-  - Creativity Award — Binh Duong Hackathon 2017
-  - Consolation Prize — National Youth and Children's Creativity Contest 2016
-  - [1st Prize](https://www.youtube.com/watch?v=OYgugvjqU4A) — Can Tho City Youth and Children's Creativity Contest 2016
-  - 3rd Prize — National Young Informatics Contest 2016
-- Achieved the title of Outstanding Student from Grade 10-12.
-- Selected for the National Excellent Student Contest in Informatics for two consecutive years during high school.
-- Honored on the school's "Hall of Fame" for academic achievements.
-- Developed a feature using Node.js and Pandoc to recognize multiple-choice questions from .docx files and upload them to an [online quiz platform](https://youtu.be/QjR99wdmTyo) I created.
-- Developed websites based on Laravel framework.
-- Built websites with PHP and MySQL, following the MVC architecture.`,
+        description: `
+- Majored in Mathematics and Natural Sciences (MIPA).
+- Focused on Mathematics, Physics, Chemistry, Biology.
+- Gained strong analytical skills through solving complex problems and lab experiments.
+- Developed critical thinking through scientific methods and data interpretation.`,
         skills: [
-          "Algorithms",
-          "C++",
-          "PHP",
-          "MySQL",
-          "Laravel",
-          "Node.js",
-          "Pandoc",
-          "Self-learning",
+          "Mathematics",
+          "Physics",
+          "Chemistry",
+          "Biology",
+          "Analytical Thinking",
+          "Problem solving",
+          "Scientific Research",
+          "Critical Thinking",
         ],
       },
       {
-        id: "36c4c6fb-02d0-48c0-8947-fda6e9a24af7",
-        title: "Thuan Hung Secondary School",
-        employmentPeriod: {
-          start: "08.2011",
-          end: "06.2015",
-        },
+        id: "e15e2252-4c24-4dc6-8cd5-a413b3b0a6c0",
+        title: "MTs Negeri Rogojampi",
+        employmentPeriod: { start: "08.2011", end: "06.2015" },
         icon: "education",
-        description: `- Recognized as the most outstanding student of the district.
-- Achieved numerous awards at city and national levels:
-  - Consolation Prize — National Young Informatics Contest 2015
-  - Consolation Prize — National Young Informatics Contest 2014
-  - 1st Prize — Can Tho City Young Informatics Contest 2014
-- Achieved the title of Outstanding Student from Grade 6-9.
-- Developed websites using the open-source NukeViet CMS.`,
+        description: `
+- Completed junior high school education with focus on general and Islamic studies.
+- Studied Mathematics, Science, Social Studies, and Languages.
+- Learned Islamic education (Quran, Fiqh, Islamic history).
+- Built discipline, teamwork, and strong academic foundation.`,
         skills: [
-          "Pascal",
-          "NukeViet",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Self-learning",
+          "Mathematics",
+          "Science",
+          "Social Studies",
+          "Bahasa Indonesia",
+          "English",
+          "Islamic Studies",
+          "Teamwork",
+          "Discipline",
         ],
       },
     ],

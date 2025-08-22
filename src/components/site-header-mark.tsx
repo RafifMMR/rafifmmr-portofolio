@@ -1,18 +1,17 @@
 "use client";
 
-import { useMotionValueEvent, useScroll } from "motion/react";
-import * as motion from "motion/react-m";
+import { m, useMotionValueEvent, useScroll } from "motion/react";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
-import { ChanhDaiMark } from "./chanhdai-mark";
+import { RafifMark } from "@/components/rafif-mark";
 
 export function SiteHeaderMark() {
   const pathname = usePathname();
-  return pathname === "/" ? <ChanhDaiMarkMotion /> : <ChanhDaiMark />;
+  return pathname === "/" ? <RafifMarkMotion /> : <RafifMark />;
 }
 
-function ChanhDaiMarkMotion() {
+function RafifMarkMotion() {
   const { scrollY } = useScroll();
   const [visible, setVisible] = useState(false);
   const distanceRef = useRef(160);
@@ -38,29 +37,9 @@ function ChanhDaiMarkMotion() {
   }, []);
 
   return (
-    // <motion.svg
-    //   xmlns="http://www.w3.org/2000/svg"
-    //   viewBox="0 0 512 256"
-    //   initial={{
-    //     opacity: 0,
-    //     transform: "translateY(8px)",
-    //   }}
-    //   animate={{
-    //     opacity: visible ? 1 : 0,
-    //     transform: visible ? "translateY(0px)" : "translateY(8px)",
-    //   }}
-    //   transition={{ duration: 0.3 }}
-    // >
-    //   <path
-    //     d="M192 256H64v-64h128v64ZM448 64H320v128h128v64H256V0h192v64ZM64 192H0V64h64v128ZM512 192h-64V64h64v128ZM192 64H64V0h128v64Z"
-    //     fill="currentColor"
-    //   />
-    // </motion.svg>
-
-    <motion.svg
+    <m.svg
       xmlns="http://www.w3.org/2000/svg"
-      
-      viewBox="0 0 150 150"
+      viewBox="0 0 170 170"
       fill="none"
       initial={{
         opacity: 0,
@@ -73,11 +52,10 @@ function ChanhDaiMarkMotion() {
       transition={{ duration: 0.3 }}
     >
       <path
-        d="M100 0C127.614 0 150 22.3858 150 50C150 77.6142 127.614 100 100 100H0V0H100ZM57 35C48.7157 35 42 41.7157 42 50C42 58.2843 48.7157 65 57 65H92C100.284 65 107 58.2843 107 50C107 41.7157 100.284 35 92 35H57Z"
-        fill="#F9F7F3"
+        d="M160 160H10V10H110C137.614 10 160 32.3858 160 60C160 87.6142 137.614 110 110 110H160V160ZM67 45C58.7157 45 52 51.7157 52 60C52 68.2843 58.7157 75 67 75H102C110.284 75 117 68.2843 117 60C117 51.7157 110.284 45 102 45H67Z"
+        fill="#FF6461"
       />
-      <path d="M0 100H150V150H0V100Z" fill="#F9F7F3" />
-    </motion.svg>
+    </m.svg>
   );
 }
 

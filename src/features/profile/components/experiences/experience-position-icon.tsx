@@ -2,9 +2,10 @@ import type { LucideProps } from "lucide-react";
 import {
   BriefcaseBusinessIcon,
   CodeXmlIcon,
-  DraftingCompassIcon,
   GraduationCapIcon,
+  LayoutTemplate,
   LightbulbIcon,
+  PenTool,
 } from "lucide-react";
 
 import type { ExperiencePositionIcon } from "../../types/experiences";
@@ -14,10 +15,11 @@ const iconMap: Record<
   React.ComponentType<LucideProps>
 > = {
   code: CodeXmlIcon,
-  design: DraftingCompassIcon,
+  design: PenTool,
   education: GraduationCapIcon,
   business: BriefcaseBusinessIcon,
   idea: LightbulbIcon,
+  wordpress: LayoutTemplate,
 };
 
 export function ExperienceIcon({
