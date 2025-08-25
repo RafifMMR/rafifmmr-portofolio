@@ -2,8 +2,8 @@ import { ArrowRightIcon } from "lucide-react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
-import { ChanhDaiWordmark } from "@/components/chanhdai-wordmark";
 import { RafifMark } from "@/components/rafif-mark";
+import { RafifWordmark } from "@/components/rafif-wordmark";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -46,7 +46,7 @@ export function Brand() {
             </div>
 
             <div className="screen-line-after flex items-center justify-center pr-8 after:z-1">
-              <ChanhDaiWordmark className="h-6 w-auto sm:h-10" />
+              <RafifWordmark className="h-6 w-auto sm:h-10" />
             </div>
           </div>
         </div>

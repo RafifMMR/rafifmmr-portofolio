@@ -5,10 +5,10 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { toast } from "sonner";
 
-import { getMarkSVG,RafifMark } from "@/components/rafif-mark";
+import { getMarkSVG, RafifMark } from "@/components/rafif-mark";
 import { copyText } from "@/utils/copy";
 
-import { getWordmarkSVG } from "./chanhdai-wordmark";
+import { getWordmarkSVG } from "./rafif-wordmark";
 import {
   ContextMenu,
   ContextMenuContent,

@@ -35,9 +35,9 @@ import { cn } from "@/lib/utils";
 import type { Post } from "@/types/blog";
 import { copyText } from "@/utils/copy";
 
-import { getWordmarkSVG } from "./chanhdai-wordmark";
 import { Icons } from "./icons";
 import { getMarkSVG, RafifMark } from "./rafif-mark";
+import { getWordmarkSVG } from "./rafif-wordmark";
 import { Button } from "./ui/button";
 
 type CommandLinkItem = {

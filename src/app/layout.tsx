@@ -77,16 +77,16 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "https://res.cloudinary.com/dnuusu1kb/image/upload/v1755836086/rafif-logo-ico.ico ",
+        url: "https://res.cloudinary.com/dnuusu1kb/image/upload/v1756090093/rafif-logo-favico.ico",
         sizes: "any",
       },
       {
-        url: "https://res.cloudinary.com/dnuusu1kb/image/upload/v1755835868/rafif-logo.svg",
+        url: "https://res.cloudinary.com/dnuusu1kb/image/upload/v1756090093/rafif-logo.svg",
         type: "image/svg+xml",
       },
     ],
     apple: {
-      url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
+      url: "https://res.cloudinary.com/dnuusu1kb/image/upload/v1756090093/logo-rafifmmr.svg",
       type: "image/png",
       sizes: "180x180",
     },
